@@ -13,14 +13,8 @@ public:
                 } 
             }
         }
-        // for (int k=1;k<intersection.size();k++)
-        // {
-        //     if(intersection[k]==intersection[k-1]){
-        //         intersection.pop_back();
-        //     }
-        // }
-        unordered_set<int> set1(intersection.begin(),intersection.end());
-        return vector<int>(set1.begin(),set1.end());
+         unordered_set<int> set1(intersection.begin(),intersection.end());
+         return vector<int>(set1.begin(),set1.end());
         
     }
 };
