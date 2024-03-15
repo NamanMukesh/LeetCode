@@ -5,11 +5,13 @@ public:
         int ctzero=0;
         for(int i=0; i<n;i++){
             if(nums[i]!=0){
-                nums[ctzero++]=nums[i];  
+                nums[ctzero]=nums[i];  
+                ctzero++;
             }
         }
         while(ctzero < n) {
-            nums[ctzero++] = 0;
+            nums[ctzero] = 0;
+            ctzero++;
         }
     }
 };
