@@ -8,7 +8,7 @@ public:
                 mpp[nums[i]]=i;
             }
             else{
-                return {mpp[complement],i};
+                return {i,mpp[complement]};
             }
         }
         return {-1,-1};
